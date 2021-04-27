@@ -1,0 +1,98 @@
+#!/bin/bash
+while true
+do 
+clear
+echo ""
+echo -e "\e[32mGGGGGGGGGGGG       EEEEEEEEEEEE\e[0m"
+echo -e "\e[32mG                  E           \e[0m"
+echo -e "\e[32mG                  E           \e[0m"
+echo -e "\e[32mG                  EEEEEE      \e[0m"
+echo -e "\e[32mG       GGGG       EEEEEE      \e[0m"
+echo -e "\e[32mG          G       E           \e[0m"
+echo -e "\e[32mG          G   _   E           \e[0m"
+echo -e "\e[32mGGGGGGGGGGGG  |_|  EEEEEEEEEEEE\e[0m"
+echo ""
+echo -e "\e[32mGod Eye\e[0m"
+echo ""
+sleep 0
+echo -e "\e[31m-------------------------------\e[0m"
+echo -e "\e[31mMade by @N1ghGu4rd\e[0m"
+echo -e "\e[31m-------------------------------\e[0m"
+sleep 1
+echo ""
+echo -e "\e[96m1. Nombre\e[0m"
+echo -e "\e[96m2. Número de teléfono (es)\e[0m"
+echo -e "\e[96m3. Dirección IP\e[0m"
+echo -e "\e[96m4. RRSS\e[0m"
+echo -e "\e[96m5. Inf. contacto creador\e[0m"
+echo ""
+echo -e "\n"
+echo -e "\e[96mOpción: \c\e[0m"
+read answer
+case "$answer" in
+
+1)
+clear
+echo -e "\e[31m-------------\e[0m"
+echo -e "\e[31mNombre\e[0m"
+echo -e "\e[31m-------------\e[0m"
+echo ""
+echo -e "\e[31mInserte Nombre y Apellidos: \c\e[0m"
+read answer
+firefox https://webmii.com/people?n="$answer"
+;;
+
+2)
+clear
+echo -e "\e[93m-------------\e[0m"
+echo -e "\e[93mNº Telfónico\e[0m"
+echo -e "\e[93m-------------\e[0m"
+echo ""
+echo -e "\e[93mIMPORTANTE: Debido a la Ley Organica de Protección de Datos(LOPD),"
+echo -e "\e[93mla información que le salga a continuación es la maxima informacion posible que encontrará legalmente. \e[0" 
+echo ""
+echo -e "\e[93mInserte número: (+34) \c\e[0m"
+read answer
+firefox https://www.numerosdetelefono.es/"$answer"
+;;
+
+3)
+clear
+echo -e "\e[96m-------------\e[0m"
+echo -e "\e[96mDirección IP\e[0m"
+echo -e "\e[96m-------------\e[0m"
+echo ""
+echo -e "\e[96mInserte IP: \c\e[0m"
+read answer
+firefox https://whatismyipaddress.com/ip/"$answer"
+;;
+
+4)
+clear
+echo -e "\e[32m-------------\e[0m"
+echo -e "\e[32mRRSS\e[0m"
+echo -e "\e[32m-------------\e[0m"
+echo ""
+echo -e "\e[32mInserte usuario: \c\e[0m"
+read answer
+firefox https://twitter.com/"$answer"
+firefox https://instagram.com/"$answer"
+firefox https://www.tiktok.com/"$answer"?lang=es
+firefox https://www.strava.com/athletes/"$answer"
+firefox https://f3.cool/"$answer"
+firefox https://open.spotify/"$answer"
+;;
+
+5)
+echo ""
+echo -e "\e[33m----------------------\e[0m"
+echo -e "\e[33mInf. Contacto Creador\e[0m"
+echo -e "\e[33m----------------------\e[0m"
+echo ""
+echo -e "\e[33mInstagram: @N1ghtGu4rd\e[0m"
+echo -e "\e[33mTelegram: @N1GHTGU4RD\e[0m"
+echo -e "\e[33mProtonmail: nightguard@protonmail.com\e[0m"
+echo -e "\e[33mYouTube: En proceso...\e[0m"
+read answer
+esac
+done
